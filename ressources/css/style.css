@@ -1,0 +1,103 @@
+#section0,
+#section1,
+#section2,
+#section3,
+#slide1,
+#slide2{
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#section0{
+	background-image: url(../../ressources/custom-imgs/header-bg.jpg);
+}
+
+#section1{
+	background-image: url(../../ressources/custom-imgs/center-bg.jpg);
+}
+
+#section2{
+	background-image: url(../../ressources/custom-imgs/contact-bg.jpg);
+}
+
+#menu{
+	display: flex;
+	justify-content: space-between;
+}
+h1{
+	color : #353331;
+	width: 50%;
+	margin: auto;
+	border-radius: 15px;
+}
+
+/*******************PORTFOLIO*********************/
+
+.portfolio-img{
+	width: 70%;
+	margin-top: 40px;
+	border-radius: 15px;
+	box-shadow: 15px 15px 2px 1px rgba(0, 0, 255, .4);
+}
+
+figcaption{
+	font-size: 1.5em;
+	margin-top: 20px;
+	color: black;
+}
+
+#menu .en{
+	background-image: url(../../ressources/custom-imgs/british-flag.png);
+	background-size: cover !important;
+	background-position: center !important;
+}
+#menu .fr{
+	background-image: url(../../ressources/custom-imgs/french-flag.svg);	
+	background-size: cover !important;
+	background-position: center !important;
+}
+.fp-controlArrow.fp-prev{
+	left: 40px;
+}
+
+.fp-controlArrow.fp-next{
+	right: 40px;
+}
+
+#fp-nav a{
+	margin: 0;
+	margin-left: 10px;
+}
+/***********************************************/
+
+
+/*******************CONTACT*********************/
+
+.intro{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 75%;
+	width: 50%;
+	margin: auto;
+	color : #353331;
+	background-color: rgba(133,133,133,0.6);
+	border-radius: 15px;	
+}
+#contact-form{	
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: auto;
+	font-size: 1.8em;
+}
+
+.input-area{
+	text-align: center;
+}
+
+textarea{
+	font-size: 0.7em;
+}
+
+/***********************************************/

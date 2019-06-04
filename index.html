@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="FR">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Maxence WILMES</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage looping demo." />
+	<meta name="keywords"  content="fullpage,jquery,looping,loop,loopTop,loopBottom,demo" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="ressources/css/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="ressources/css/examples.css" />
+	<link rel="stylesheet" type="text/css" href="ressources/css/style.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+<body>
+<ul id="menu">
+  <div>
+  	<ul>
+		  <li data-menuanchor="firstPage" class="active"><a href="#firstPage">HOME</a></li>
+		  <li data-menuanchor="secondPage"><a href="#secondPage">PORTFOLIO</a></li>
+		  <li data-menuanchor="3rdPage"><a href="#3rdPage">CONTACT</a></li>
+  	</ul>
+  </div>	
+  <div>
+  	<ul>
+	    <li class="en" data-menuanchor=""><a href="">EN</a></li>
+	    <li class="fr" data-menuanchor=""><a href="">FR</a></li>
+    </ul>
+  </div>
+</ul>
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<h1>Parcours</h1>
+		<p>Looping Top and Bottom Enabled</p>
+	</div>
+	<div class="section" id="section1">
+		<div class="slide" id="slide1">
+			<figure class="img-container">
+				<a href="https://github.com/Toorain/DemarreTaStory06" target="blank"><img class="portfolio-img" src="ressources/custom-imgs/DTS06.png" alt="project 1" /></a>
+				<figcaption>Projet Démarre Ta Story 06</figcaption>
+			</figure>
+		</div>
+		<div class="slide" id="slide2">
+			<figure class="img-container">
+				<a href="https://github.com/Toorain/Liste-de-Villes" target="blank"><img class="portfolio-img" src="ressources/custom-imgs/city-search.jpg" alt="project 2" /></a>
+				<figcaption>Algorithme de recherche dans une liste Word</figcaption>
+			</figure>
+		</div>
+		<div class="slide" id="slide3">
+			<figure class="img-container">
+				<a href="https://github.com/Toorain/Formulaire" target="blank"><img class="portfolio-img" src="ressources/custom-imgs/formulaire.png" alt="project 3" /></a>
+					<figcaption>Réalisation d'un fomulaire "from scratch"</figcaption>
+			</figure>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>Contact</h1>			
+			<form action="traitement.php" method="POST" id="contact-form">				
+				<label for="name">Nom</label><input type="text" name="name" id="name" class="input-area" required/>
+				<label for="mail">e-Mail</label><input type="text" name="mail" id="mail" class="input-area" required/>
+				<label for="message">Message</label><textarea name="message" id="message" cols="50" rows="6" required></textarea>
+				<div class="buttons">
+					<input type="submit" name="send" value="Envoyer" />
+					<input type="reset" name="reset" />
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="ressources/js/fullpage.js"></script>
+<script type="text/javascript" src="ressources/js/examples.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
+        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        menu: '#menu',
+        loopTop: true,
+        loopBottom: true,
+        navigation: true,
+        navigationPosition: 'right',
+        slidesNavigation: true
+    });
+</script>
+
+</body>
+</html>
